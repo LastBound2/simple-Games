@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WIP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="top-row">
+       <button id="ClearDataBtn" onclick="showConfirmationDialog()"><i class="fas fa-trash-alt"></i></button>
+       <div id="displayClickcount">Clicks: 0</div>
+       <div id="showAutoClick">Auto click: 0s</div>
+       <div id="showClickBonus">Click bonus: 1</div>
+    </div>
+    <div id="left-column">
+        <button id="ClickBtn" onclick="ClickBtn()">Click Me</button>
+    </div>
+    <div id="right-column">
+        <button id="ClickBonusBtn" onclick="IncreaseClickBonus()">Increase Bonus by one: 10 Clicks</button>
+        <button id="AutoClickBtn" onclick="IncreaseAutoClick()">Increase auto clicker by one: 100 clicks</button>
+        <button id="AutoClicktenBtn" onclick="IncreaseAutoClickTen()">Increase auto clicker by ten: 1000 clicks</button>
+    </div>
+
+    <!-- Confirmation Dialog -->
+    <div id="confirmationDialog" class="dialog">
+        <div class="dialog-content">
+            <p>Are you sure you want to clear the data?</p>
+            <button onclick="clearData()">Yes</button>
+            <button onclick="hideConfirmationDialog()">No</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
